@@ -19,26 +19,6 @@ const middleware = (req, res, next) => {
     next();
 };
 
-// app.get("/", (req, res) => {
-//     res.send(`We are running`);
-// });
-
-// app.get("/about", middleware, (req, res) => {
-//     res.send(`We are running at about`);
-// });
-
-// app.get("/contact", (req, res) => {
-//     res.send(`We are running at contact`);
-// });
-
-// app.get("/signin", (req, res) => {
-//     res.send(`We are running at signin`);
-// });
-
-// app.get("/signup", (req, res) => {
-//     res.send(`We are running at signup`);
-// });
-
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
