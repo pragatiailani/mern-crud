@@ -6,12 +6,12 @@ const app = express();
 // dotenv.config({ path: './.env' });
 dotenv.config();
 
-require('./db/db.js');
+require("./db/db.js");
 const User = require("./model/userSchema");
 
 app.use(express.json());
 
-//* The app.use() function is a method provided by Express to set up middleware functions or routes. 
+//* The app.use() function is a method provided by Express to set up middleware functions or routes.
 app.use(require("./router/auth"));
 
 const middleware = (req, res, next) => {
